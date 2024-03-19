@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #fefff0;
+  --secondary-color: #f3abcb;
+  --button-color: #bae6ff;
+}
+
+*,
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+}
+
+.box-Shadow {
+  box-shadow: 10px 12px #7e7b7b;
+}
