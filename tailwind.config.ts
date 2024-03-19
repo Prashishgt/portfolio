@@ -12,6 +12,7 @@ const config: Config = {
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
         "button-color": "var(--button-color)",
+        "muted-button-color": "var(--mutedButton-color)",
       },
     },
   },

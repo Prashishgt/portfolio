@@ -16,6 +16,8 @@ import HashCircle from "@/public/HashCircle.svg";
 import DownCircle from "@/public/DownCircle.svg";
 import Hamburger from "@/public/Hamburger.svg";
 import YellowStar from "@/public/HashCircle.svg";
+import RightArrow from "@/public/rightArrow.svg";
+import LeftArrow from "@/public/leftArrow.svg";
 import SpeakingEffect from "@/public/SpeakingEffect.svg";
 
 export const StarIcon = star;
@@ -30,6 +32,8 @@ export const BlueCircleStarIcon = BlueCircleStar;
 export const HeartCircleIcon = HeartCircle;
 export const StarFishIcon = starFish;
 export const TopRightArrowIcon = TopRightArrow;
+export const RightArrowIcon = RightArrow;
+export const LeftArrowIcon = LeftArrow;
 export const StarBoxIcon = StarBox;
 export const SmileIcon = smile;
 export const LightBulbIcon = lightBulb;

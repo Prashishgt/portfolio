@@ -41,3 +41,23 @@ export const navItems: INavItem[] = [
     hasBorder: false,
   },
 ];
+
+interface FrontendSkill {
+  id: number;
+  skill: string;
+}
+
+export const frontendSkills: FrontendSkill[] = [
+  { id: 1, skill: "React" },
+  { id: 2, skill: "Next.js" },
+  { id: 3, skill: "Redux" },
+  { id: 4, skill: "Context" },
+  { id: 5, skill: "SSR" },
+  { id: 6, skill: "SSG" },
+  { id: 7, skill: "Routing" },
+  { id: 8, skill: "Responsive" },
+  { id: 9, skill: "API" },
+  { id: 10, skill: "Styling" },
+  { id: 11, skill: "Lazy" },
+  { id: 12, skill: "Components" },
+];
