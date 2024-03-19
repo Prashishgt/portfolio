@@ -2,6 +2,7 @@ import React from "react";
 import MaxWidthWrapper from "./common/MaxWidthWrapper";
 import { SmileIcon } from "@/utils/icons";
 import Image from "next/image";
+import ServiceTable from "./ServiceTable";
 
 const Services = () => {
   return (
@@ -15,7 +16,7 @@ const Services = () => {
           <Image src={SmileIcon} alt="smileIcon" fill />
         </div>
       </div>
-      <div>fsdafasd</div>
+      <ServiceTable />
     </MaxWidthWrapper>
   );
 };
