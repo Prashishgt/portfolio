@@ -6,7 +6,7 @@ import ServiceTable from "./ServiceTable";
 
 const Services = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col gap-20 py-20">
+    <MaxWidthWrapper className="flex flex-col items-center justify-center gap-20 py-20">
       <div className="w-1/2 flex gap-6">
         <h2 className="flex-grow font-semibold text-xl leading-9">
           Welcome to my portfolio! I deliver 100% satisfaction and fine results.

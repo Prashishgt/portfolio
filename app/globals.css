@@ -7,6 +7,7 @@
   --secondary-color: #f3abcb;
   --button-color: #bae6ff;
   --mutedButton-color: #8dcbee;
+  --brightYellow-color: #ffe68c;
 }
 
 * {
@@ -28,4 +29,8 @@ body {
 
 .box-Shadow {
   box-shadow: 10px 12px #7e7b7b;
+}
+
+.small-box-Shadow {
+  box-shadow: 10px 14px #7e7b7b;
 }

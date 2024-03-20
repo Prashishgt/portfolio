@@ -13,6 +13,7 @@ const config: Config = {
         "secondary-color": "var(--secondary-color)",
         "button-color": "var(--button-color)",
         "muted-button-color": "var(--mutedButton-color)",
+        "bright-yellow-color": "var(--brightYellow-color)",
       },
     },
   },

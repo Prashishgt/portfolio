@@ -19,9 +19,13 @@ import YellowStar from "@/public/HashCircle.svg";
 import RightArrow from "@/public/rightArrow.svg";
 import LeftArrow from "@/public/leftArrow.svg";
 import SpeakingEffect from "@/public/SpeakingEffect.svg";
+import Arrow from "@/public/arrow.svg";
+import NewIconI from "@/public/NewIcon.svg";
 
 export const StarIcon = star;
 export const BallIcon = ball;
+export const NewIcon = NewIconI;
+export const ArrowIcon = Arrow;
 export const NewTextIcon = NewText;
 export const DownCircleIcon = DownCircle;
 export const HamburgerIcon = Hamburger;

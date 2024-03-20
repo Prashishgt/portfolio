@@ -1,5 +1,6 @@
 import React from "react";
 import MaxWidthWrapper from "./common/MaxWidthWrapper";
+import ServiceCard from "./common/ServiceCard";
 
 const ServiceTable = () => {
   return (
@@ -14,8 +15,14 @@ const ServiceTable = () => {
           <p className="text-xl font-medium">Projects</p>
         </div>
       </div>
-      <div className="w-1/3  border-x-[3px] border-black"></div>
-      <div className="flex-grow p-4 "></div>
+      <div className="w-1/3  border-x-[3px] border-black">
+        <ServiceCard />
+        <ServiceCard />
+      </div>
+      <div className="flex-grow border-r-[3px] border-black">
+        <ServiceCard />
+        <ServiceCard />
+      </div>
     </div>
   );
 };
