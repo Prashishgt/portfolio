@@ -1,15 +1,25 @@
-import { FrameLayoutIcon } from "@/utils/icons";
 import Image from "next/image";
-import React from "react";
+import FrameLayout from "./FrameLayout";
+import { TopRightArrowIcon } from "@/utils/icons";
 
 const PortfolioCard = () => {
   return (
-    <div className="relative w-[33rem] h-[33rem] border-black border-[4px] ">
-      <div className="absolute -top-1 -left-4 border-black border-[3px] w-5"></div>
-      <div className="absolute top-0 right-0 w-4 h-4 bg-black"></div>
-      <div className="absolute bottom-0 left-0 w-4 h-4 bg-black"></div>
-      <div className="absolute bottom-0 right-0 w-4 h-4 bg-black"></div>
-    </div>
+    <FrameLayout className="flex flex-col gap-8 p-9">
+      <div className="relative h-72 w-full">
+        <Image src="/RandomImage.svg" alt="yourPicture" fill />
+      </div>
+      <div className="space-y-3">
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl font-bold">Web Design</h1>
+          <div className="relative h-10 w-10">
+            <Image src={TopRightArrowIcon} alt="yourPicture" fill />
+          </div>
+        </div>
+        <p className="text-xl font-medium">
+          Web design - User research - webflow development
+        </p>
+      </div>
+    </FrameLayout>
   );
 };
 
