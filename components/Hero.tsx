@@ -7,29 +7,35 @@ import Button from "./common/Button";
 import StarFishIconWrapper from "./common/StarFishIcon";
 
 const Hero = () => {
+  const handleDownload = () => {
+    const downloadUrl = "/cv.pdf";
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    link.setAttribute("download", "PrashishResume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
-    <MaxWidthWrapper className=" flex items-center justify-center py-36 relative">
+    <MaxWidthWrapper className="flex items-center justify-center sm:py-36 py-12 relative">
       <StarFishIconWrapper className="-left-12 bottom-0" />
-      <div className="flex">
-        <div className="space-y-12">
-          <div className="h-[203px] w-[203px] relative">
+      <div className="flex lg:flex-row flex-col items-center lg:justify-between lg:gap-4 sm:gap-0 gap-8">
+        <div className="flex flex-col gap-12 h-full">
+          <div className="sm:h-[203px] sm:w-[203px] h-40 w-40 relative">
             <Image src={StarBoxIcon} alt="paperCard" fill />
           </div>
-          <h2 className="text-[60px] font-semibold">
+          <h2 className="sm:text-5xl text-3xl font-semibold text-wrap">
             I create &lt;/&gt; top notch websites 💻
           </h2>
           <div className="relative  w-72">
-            <Button
-              btnLabel="See Portfolio"
-              onClick={() => alert("Love you")}
-            />
-            <div className="absolute h-[5.3rem] w-[4.6rem]  top-1/2 -right-20">
+            <Button onClick={handleDownload}>See Portfolio</Button>
+            <div className="absolute sm:h-[5.3rem] sm:w-[4.6rem] h-14 w-14  top-1/2 -right-20">
               <Image src={SpeakingEffectIcon} alt="clicked" fill />
             </div>
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="h-[537px] w-[537px] relative py-10">
+          <div className="sm:h-[537px] sm:w-[537px] w-[300px] h-[300px] relative py-10">
             <Image
               title="Floripa+"
               src={ImageBoxIcon}

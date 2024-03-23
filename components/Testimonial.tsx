@@ -6,19 +6,19 @@ import { NewIcon } from "@/utils/icons";
 
 const Testimonial = () => {
   return (
-    <MaxWidthWrapper className="overflow-visible flex flex-col items-center justify-center py-10">
-      <div className="w-1/2 text-2xl font-bold relative">
-        Here&apos;s what my clients are saying about my work
+    <MaxWidthWrapper className="overflow-visible flex flex-col md:gap-0 gap-14 items-center justify-center py-10">
+      <div className="md:w-1/2 w-full text-2xl font-bold relative">
+        Here&apos;s what people have to say about my work
         <div className="h-8 w-8 absolute right-0">
           <Image src={NewIcon} alt="newIcon" fill />
         </div>
       </div>
-      <div className="w-3/4 grid grid-cols-2 gap-x-0 justify-center items-center">
+      <div className="lg:w-3/4 sm:mt-o mt-4 w-full grid xl:grid-cols-2 grid-cols-1 sm:gap-x-0 md:gap-y-0 gap-y-2 justify-center items-center">
         <TestimonialCard rotateCLassName="rotate-3" />
-        <TestimonialCard rotateCLassName="-rotate-3 mt-32" />
+        <TestimonialCard rotateCLassName="-rotate-3 xl:mt-32 lg:mt-4 mt-0" />
 
         <TestimonialCard rotateCLassName="rotate-3" />
-        <TestimonialCard rotateCLassName="-rotate-3 mt-32" />
+        <TestimonialCard rotateCLassName="-rotate-3 xl:mt-32 lg:mt-4  mt-0" />
       </div>
     </MaxWidthWrapper>
   );

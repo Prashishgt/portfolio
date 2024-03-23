@@ -23,11 +23,9 @@ const ContactForm = () => {
         placeholder="I want to discuss you about...."
       />
       <div className="relative w-72">
-        <Button
-          btnLabel="Send here"
-          className="h-14 -rotate-2"
-          onClick={() => alert("Love you")}
-        />
+        <Button className="h-14 -rotate-2" onClick={() => alert("Love you")}>
+          Send here
+        </Button>
         <div className="absolute h-[5.3rem] w-[4.6rem]  top-1/2 -right-20">
           <Image src={SpeakingEffectIcon} alt="clicked" fill />
         </div>

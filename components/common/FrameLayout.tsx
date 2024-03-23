@@ -11,7 +11,7 @@ const FrameLayout = ({
   return (
     <div
       className={cn(
-        "relative w-[33rem] border-black border-[4px] small-box-Shadow",
+        "relative sm:w-[33rem] w-full border-black border-[4px] small-box-Shadow",
         className
       )}
     >

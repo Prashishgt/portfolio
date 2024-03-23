@@ -14,11 +14,11 @@ const CustomInput = ({
   ...props
 }: ICustomInput) => {
   return (
-    <div className="flex">
+    <div className="flex items-center">
       <label
         htmlFor=""
         className={cn(
-          "border-black border-l-[3px]  py-3 px-1 text-xl font-semibold",
+          "border-black border-l-[3px] text-center  sm:py-3 py-1 px-1 sm:text-xl text-md font-semibold",
           labelClassName
         )}
       >
@@ -26,7 +26,7 @@ const CustomInput = ({
       </label>
       <input
         className={cn(
-          "bg-transparent border-black border-b-[3px] outline-none h-10 py-1 pl-8 text-lg flex-grow",
+          "bg-transparent border-black border-b-[3px] outline-none h-10 py-1 sm:pl-8 pl-4 sm:text-lg text-md flex-grow",
           inputClassName
         )}
         {...props}

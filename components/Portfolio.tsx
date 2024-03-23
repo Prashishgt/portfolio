@@ -6,16 +6,16 @@ import PortfolioCard from "./common/PortfolioCard";
 
 const Portfolio = () => {
   return (
-    <MaxWidthWrapper className="overflow-visible flex flex-col py-20 items-center gap-8">
+    <MaxWidthWrapper className="overflow-visible flex items-center justify-center flex-col py-20 sm:gap-8 gap-12">
       <div className="flex items-center gap-4">
-        <h2 className="text-5xl font-semibold">
+        <h2 className="sm:text-5xl text-3xl font-semibold">
           My <span className="border-black border-b-[3px]">Portfolio</span>
         </h2>
         <div className="h-28 w-28 relative">
           <Image src={StarBoxIcon} alt="paperCard" fill />
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      <div className="flex flex-wrap items-center justify-center sm:gap-10 gap-12">
         <PortfolioCard />
         <PortfolioCard />
         <PortfolioCard />

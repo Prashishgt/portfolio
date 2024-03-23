@@ -10,7 +10,7 @@ const MiniSkills = () => {
     useHorizontalScroll(scrollSpeed);
 
   return (
-    <MaxWidthWrapper className="flex gap-6 bg-black">
+    <MaxWidthWrapper className="flex items-center justify-center gap-6 bg-black">
       <button
         className="text-black"
         onMouseDown={() => startScroll(-1)}
@@ -33,9 +33,9 @@ const MiniSkills = () => {
         ref={containerRef}
         onMouseLeave={stopScroll}
       >
-        <ul className="h-full flex items-center gap-28">
+        <ul className="h-full flex items-center sm:gap-28 gap-10">
           {frontendSkills.map((skillItem) => (
-            <li key={skillItem.id} className="text-white text-2xl">
+            <li key={skillItem.id} className="text-white sm:text-2xl text-lg">
               {skillItem.skill}
             </li>
           ))}

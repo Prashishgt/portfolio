@@ -4,18 +4,18 @@ import { TopRightArrowIcon } from "@/utils/icons";
 
 const PortfolioCard = () => {
   return (
-    <FrameLayout className="flex flex-col gap-8 p-9">
-      <div className="relative h-72 w-full">
+    <FrameLayout className="sm:flex flex-col gap-8 p-9">
+      <div className="relative sm:h-72 h-60 w-full">
         <Image src="/RandomImage.svg" alt="yourPicture" fill />
       </div>
-      <div className="space-y-3">
+      <div className="flex flex-col gap-3">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold">Web Design</h1>
+          <h1 className="sm:text-3xl text-xl font-bold">Web Design</h1>
           <div className="relative h-10 w-10">
             <Image src={TopRightArrowIcon} alt="yourPicture" fill />
           </div>
         </div>
-        <p className="text-xl font-medium">
+        <p className="sm:text-xl text-lg font-medium">
           Web design - User research - webflow development
         </p>
       </div>
