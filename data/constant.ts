@@ -81,3 +81,46 @@ export const FooterLinksItems: IFooterLinks[] = [
     href: "https://www.linkedin.com/in/prashish-g-t-a8930525a/",
   },
 ];
+
+interface ITestimonialItems {
+  id: number;
+  name: string;
+  image: string;
+  company: string;
+  testimonial: string;
+}
+
+export const testimonials: ITestimonialItems[] = [
+  {
+    id: 1,
+    name: "John Doe",
+    image: "john.jpg",
+    company: "ABC Corporation",
+    testimonial:
+      "John is an exceptional frontend developer. He consistently delivered high-quality code and exceeded our expectations.",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    image: "jane.jpg",
+    company: "XYZ Enterprises",
+    testimonial:
+      "Jane is a talented frontend developer with excellent problem-solving skills. She played a key role in the success of our projects.",
+  },
+  {
+    id: 3,
+    name: "Michael Johnson",
+    image: "michael.jpg",
+    company: "123 Industries",
+    testimonial:
+      "Michael is a dedicated frontend developer who consistently delivered innovative solutions. His attention to detail is remarkable.",
+  },
+  {
+    id: 4,
+    name: "Michael Johnson",
+    image: "michael.jpg",
+    company: "123 Industries",
+    testimonial:
+      "Michael is a dedicated frontend developer who consistently delivered innovative solutions. His attention to detail is remarkable.",
+  },
+];

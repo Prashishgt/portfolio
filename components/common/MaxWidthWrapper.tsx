@@ -9,7 +9,7 @@ const MaxWidthWrapper = ({ children, className }: IMaxWidthWrapper) => {
   return (
     <div
       className={cn(
-        "overflow-hidden mx-auto px-6 sm:px-9 lg:px-28 bg-primary-color container",
+        "overflow-hidden mx-auto px-6 sm:px-9 md:px-4 lg:px-5 bg-primary-color container",
         className
       )}
     >

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import LottieAnimation from "@/components/common/Loader";
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={space_Grotesk.className}>{children}</body>
+      <body className={space_Grotesk.className}>
+        <LottieAnimation />
+        {children}
+      </body>
     </html>
   );
 }

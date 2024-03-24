@@ -3,6 +3,7 @@ import MaxWidthWrapper from "./common/MaxWidthWrapper";
 import TestimonialCard from "./common/TestimonialCard";
 import Image from "next/image";
 import { NewIcon } from "@/utils/icons";
+import { testimonials } from "@/data/constant";
 
 const Testimonial = () => {
   return (
@@ -14,11 +15,18 @@ const Testimonial = () => {
         </div>
       </div>
       <div className="lg:w-3/4 sm:mt-o mt-4 w-full grid xl:grid-cols-2 grid-cols-1 sm:gap-x-0 md:gap-y-0 gap-y-2 justify-center items-center">
-        <TestimonialCard rotateCLassName="rotate-3" />
-        <TestimonialCard rotateCLassName="-rotate-3 xl:mt-32 lg:mt-4 mt-0" />
-
-        <TestimonialCard rotateCLassName="rotate-3" />
-        <TestimonialCard rotateCLassName="-rotate-3 xl:mt-32 lg:mt-4  mt-0" />
+        {testimonials.map((testimonialItem, index) => (
+          <TestimonialCard
+            key={testimonialItem.id}
+            rotateCLassName={
+              index % 2 == 0 ? "rotate-3" : "-rotate-3 xl:mt-32 lg:mt-4 mt-0"
+            }
+            personName={testimonialItem.name}
+            image={testimonialItem.image}
+            desc={testimonialItem.testimonial}
+            company={testimonialItem.company}
+          />
+        ))}
       </div>
     </MaxWidthWrapper>
   );

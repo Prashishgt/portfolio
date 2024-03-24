@@ -3,7 +3,21 @@ import { BallIcon } from "@/utils/icons";
 import Image from "next/image";
 import React from "react";
 
-const TestimonialCard = ({ rotateCLassName }: { rotateCLassName: string }) => {
+interface ITestimonialCard {
+  personName: string;
+  image: string;
+  desc: string;
+  company: string;
+  rotateCLassName: string;
+}
+
+const TestimonialCard = ({
+  rotateCLassName,
+  personName,
+  image,
+  desc,
+  company,
+}: ITestimonialCard) => {
   return (
     <div
       className={cn(
@@ -11,18 +25,14 @@ const TestimonialCard = ({ rotateCLassName }: { rotateCLassName: string }) => {
         rotateCLassName
       )}
     >
-      <h2 className="md:text-lg text-sm font-semibold">
-        “Design is a bridge that connects everyone and everything”
-      </h2>
+      <h2 className="md:text-lg text-sm font-semibold">{desc}</h2>
       <div className="flex gap-5 items-center">
         <div className="rounded-full border-black border-[3px] h-16 w-16 relative ">
           <Image src={BallIcon} alt="profile" fill />
         </div>
         <div>
-          <h2 className="md:text-lg text-sm font-bold">Client Name</h2>
-          <p className="md:text-sm text-xs font-medium">
-            Backend Developer, Sterling Wells
-          </p>
+          <h2 className="md:text-lg text-sm font-bold">{personName}</h2>
+          <p className="md:text-sm text-xs font-medium">{company}</p>
         </div>
       </div>
     </div>
