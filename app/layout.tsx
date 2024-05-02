@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={space_Grotesk.className}>
-        <LottieAnimation />
+        {/* <LottieAnimation /> */}
         {children}
       </body>
     </html>

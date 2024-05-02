@@ -17,7 +17,7 @@ const Hero = () => {
     document.body.removeChild(link);
   };
   return (
-    <MaxWidthWrapper className="flex items-center justify-center sm:py-36 py-12 relative">
+    <MaxWidthWrapper className="flex items-center justify-center overflow-visible sm:py-36 py-12 relative">
       <StarFishIconWrapper className="-left-12 bottom-0" />
       <div className="flex lg:flex-row flex-col items-center lg:justify-between lg:gap-4 sm:gap-0 gap-8">
         <div className="flex flex-col gap-12 h-full">
