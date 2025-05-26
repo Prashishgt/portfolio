@@ -12,8 +12,12 @@ const Button = ({ children, className, ...props }: IButton) => {
       {...props}
       className={cn(
         "border-black border-[5px] py-7 px-12 w-72 sm:h-20 h-16 rounded-full flex items-center justify-center bg-button-color font-bold text-2xl hover:bg-muted-button-color",
-        className
+        className,
+        {
+          "!opacity-50 !cursor-not-allowed ": props.disabled,
+        }
       )}
+      disabled={props.disabled}
     >
       {children}
     </button>

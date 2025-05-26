@@ -8,6 +8,7 @@ import { cn } from "@/utils/cn";
 import StarFishIconWrapper from "./StarFishIcon";
 import { useRef, useState } from "react";
 import useOutsideClick from "@/hooks/useOutsideClick ";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -44,14 +45,15 @@ const Navbar = () => {
           </div>
           <ul className="lg:flex hidden items-center bg-inherit">
             {navItems.map((navItem) => (
-              <li
-                key={navItem.id}
-                className={cn(
-                  "border-black border-l-[4px] flex items-center justify-center px-4 text-xl bg-inherit cursor-pointer transition-all duration-300 hover:underline"
-                )}
-              >
-                {navItem.label}
-              </li>
+              <Link key={navItem.id} href={navItem.href}>
+                <li
+                  className={cn(
+                    " border-black border-l-[4px] flex items-center justify-center px-4 text-xl bg-inherit cursor-pointer transition-all duration-300 hover:underline"
+                  )}
+                >
+                  {navItem.label}
+                </li>
+              </Link>
             ))}
           </ul>
           <button
@@ -65,16 +67,33 @@ const Navbar = () => {
         <div
           ref={popoverRef}
           className={cn(
-            "fixed top-0 -right-80 h-full w-80 bg-white z-50 transition-all duration-300",
+            "fixed top-0 -right-80 h-full w-80 bg-stone-50 z-50 transition-all duration-300",
             {
               "-right-80": !isOpen,
               "right-0": isOpen,
             }
           )}
         >
-          <button onClick={() => setOpen(false)}>Close</button>
-          {/* Add your drawer content here */}
-          <span>sdfsdfg</span>
+          <div className="relative">
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute left-60 top-2"
+            >
+              X
+            </button>
+            <ul className="flex flex-col items-center w-full gap-2 pt-4">
+              {navItems.map((navItem) => (
+                <li
+                  key={navItem.id}
+                  className={cn(
+                    "w-full border-black border-l-[4px] flex items-center justify-start px-4 text-xl bg-inherit cursor-pointer transition-all duration-300 hover:underline"
+                  )}
+                >
+                  {navItem.label}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </MaxWidthWrapper>
     </div>

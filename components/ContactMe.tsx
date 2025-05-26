@@ -6,7 +6,10 @@ import Image from "next/image";
 
 const ContactMe = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col lg:flex-row  md:py-36 py-10 gap-9 lg:gap-0">
+    <MaxWidthWrapper
+      id={"hireMe"}
+      className="flex flex-col lg:flex-row  md:py-36 py-10 gap-9 lg:gap-0"
+    >
       <div className="lg:w-1/2 w-full flex flex-col lg:gap-0 gap-20 relative">
         <h2 className="bg-secondary-color w-44 h-12 flex items-center justify-center text-xl font-bold rotate-3 ">
           Contact Here
