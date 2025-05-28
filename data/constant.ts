@@ -47,55 +47,77 @@ interface IFrontendSkill {
   skill: string;
 }
 
-export const frontendSkills: IFrontendSkill[] = [
-  // 🔵 Frontend Core & Performance
-  { id: 1, skill: "React" },
-  { id: 2, skill: "Next.js" },
-  { id: 3, skill: "SSR / SSG / ISR" },
-  { id: 4, skill: "Lazy Loading / Code Splitting" },
-  { id: 5, skill: "TypeScript" },
-  { id: 6, skill: "Responsive Design" },
-  { id: 7, skill: "Accessibility (a11y, aria)" },
-  { id: 8, skill: "Client/Server Components" },
-
-  // 🎨 Styling
-  { id: 9, skill: "Tailwind CSS" },
-  { id: 10, skill: "MUI / Shadcn" },
-  { id: 11, skill: "Styled Components" },
-  { id: 12, skill: "Framer Motion" },
-
-  // ⚙️ State Management & Forms
-  { id: 13, skill: "Redux / Redux Toolkit" },
-  { id: 14, skill: "React Context API" },
-  { id: 15, skill: "Zustand / Jotai" },
-  { id: 16, skill: "React Hook Form / Formik" },
-
-  // 🌐 APIs & Communication
-  { id: 17, skill: "REST API" },
-  { id: 20, skill: "gRPC" },
-  { id: 21, skill: "WebSockets (Socket.IO)" },
-  { id: 22, skill: "SWR / React Query" },
-
-  // 🛡️ Auth & Validation
-  { id: 23, skill: "NextAuth / Clerk / Better Auth" },
-  { id: 24, skill: "JWT / OAuth" },
-  { id: 25, skill: "Zod / Yup" },
-  { id: 26, skill: "RBAC / Session Handling" },
-
-  // 🧠 Architecture & Best Practices
-  { id: 27, skill: "Component-Driven Design" },
-  { id: 28, skill: "Atomic Design" },
-  { id: 29, skill: "Clean Code / SOLID Principles" },
-  { id: 30, skill: "CI/CD Basics (Vercel, GitHub Actions)" },
-  { id: 31, skill: "Monorepo" },
-
-  // 🧩 Fullstack / Backend with JS
-  { id: 32, skill: "Node.js" },
-  { id: 33, skill: "NestJS/Express" },
-  { id: 34, skill: "Microservices" },
-  { id: 35, skill: "Prisma / TypeORM" },
-  { id: 36, skill: "PostgreSQL / MySQL" },
-  { id: 37, skill: "Docker" },
+export const groupedFrontendSkills = [
+  {
+    category: "Frontend Core & Performance",
+    skills: [
+      { id: 1, skill: "React" },
+      { id: 2, skill: "Next.js" },
+      { id: 3, skill: "SSR / SSG / ISR" },
+      { id: 4, skill: "Lazy Loading / Code Splitting" },
+      { id: 5, skill: "TypeScript" },
+      { id: 6, skill: "Responsive Design" },
+      { id: 7, skill: "Accessibility (a11y, aria)" },
+      { id: 8, skill: "Client/Server Components" },
+    ],
+  },
+  {
+    category: "Styling",
+    skills: [
+      { id: 9, skill: "Tailwind CSS" },
+      { id: 10, skill: "MUI / Shadcn" },
+      { id: 11, skill: "Styled Components" },
+      { id: 12, skill: "Framer Motion" },
+    ],
+  },
+  {
+    category: "State Management & Forms",
+    skills: [
+      { id: 13, skill: "Redux / Redux Toolkit" },
+      { id: 14, skill: "React Context API" },
+      { id: 15, skill: "Zustand / Jotai" },
+      { id: 16, skill: "React Hook Form / Formik" },
+    ],
+  },
+  {
+    category: "APIs & Communication",
+    skills: [
+      { id: 17, skill: "REST API" },
+      { id: 20, skill: "gRPC" },
+      { id: 21, skill: "WebSockets (Socket.IO)" },
+      { id: 22, skill: "SWR / React Query" },
+    ],
+  },
+  {
+    category: "Auth & Validation",
+    skills: [
+      { id: 23, skill: "NextAuth / Clerk / Better Auth" },
+      { id: 24, skill: "JWT / OAuth" },
+      { id: 25, skill: "Zod / Yup" },
+      { id: 26, skill: "RBAC / Session Handling" },
+    ],
+  },
+  {
+    category: "Architecture & Best Practices",
+    skills: [
+      { id: 27, skill: "Component-Driven Design" },
+      { id: 28, skill: "Atomic Design" },
+      { id: 29, skill: "Clean Code / SOLID Principles" },
+      { id: 30, skill: "CI/CD Basics (Vercel, GitHub Actions)" },
+      { id: 31, skill: "Monorepo" },
+    ],
+  },
+  {
+    category: "Fullstack / Backend with JS",
+    skills: [
+      { id: 32, skill: "Node.js" },
+      { id: 33, skill: "NestJS/Express" },
+      { id: 34, skill: "Microservices" },
+      { id: 35, skill: "Prisma / TypeORM" },
+      { id: 36, skill: "PostgreSQL / MySQL" },
+      { id: 37, skill: "Docker" },
+    ],
+  },
 ];
 
 interface IFooterLinks {
